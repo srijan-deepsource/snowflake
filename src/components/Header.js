@@ -101,6 +101,8 @@ var Header = React.createClass({
   _onPressMark () {
     this.props.onGetState(!this.props.showState)
   },
+  
+  
   /**
    * ### _onChangeText
    * when the textinput value changes, set the state for that component
