@@ -1,6 +1,7 @@
 /**
  * # profileReducer.js
  *
+ *
  * The reducer user profile actions
  */
 'use strict'
