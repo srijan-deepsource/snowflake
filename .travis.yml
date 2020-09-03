@@ -13,7 +13,8 @@ script:
 after_success:
   - curl https://deepsource.io/cli | sh
   # Report results to deepsource dev
-  #- ./bin/deepsource report --analyzer test-coverage --key javascript --value-file ./coverage/cobertura-coverage.xml
+  - DEEPSOURCE_DSN=$DS_DEV_DSN
+  - ./bin/deepsource report --analyzer test-coverage --key javascript --value-file ./coverage/cobertura-coverage.xml
   # Report results to deepsource prod:
   - DEEPSOURCE_DSN=$DS_PROD_DSN
   # - echo $DEEPSOURCEDSN
