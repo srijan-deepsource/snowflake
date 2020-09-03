@@ -17,6 +17,7 @@ const formValidation = require('./profileFormValidation').default
 /**
  * ## Actions
  *
+ *
  */
 const {
   ON_PROFILE_FORM_FIELD_CHANGE,
@@ -35,6 +36,7 @@ const {
 
 /**
  * ## Initial State
+ *
  *
  */
 const InitialState = require('./profileInitialState').default
